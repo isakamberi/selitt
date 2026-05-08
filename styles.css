@@ -572,6 +572,18 @@ img {
     text-align: center;
 }
 
+.google-review-action {
+    margin-top: 20px;
+}
+
+.btn-google-review {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Default to full width on desktop for visual balance */
+}
+
 
 /* ==========================================================================
    Footer
@@ -755,8 +767,50 @@ img {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
-        /* simple hidden for mobile, would need JS for full menu */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        padding: 20px 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: var(--trans-fast);
+        gap: 20px;
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        color: var(--clr-text-main) !important;
+    }
+
+    .btn-outline {
+        border-color: var(--clr-text-main) !important;
+        color: var(--clr-text-main) !important;
+    }
+
+    .lang-toggle {
+        justify-content: center;
+        margin-left: 0;
+        color: var(--clr-text-light);
+    }
+
+    .lang-option {
+        color: var(--clr-text-main);
+    }
+
+    .lang-option.active {
+        color: var(--clr-accent);
     }
 
     .menu-toggle {
@@ -764,6 +818,7 @@ img {
         flex-direction: column;
         gap: 6px;
         cursor: pointer;
+        z-index: 1001;
     }
 
     .bar {
@@ -777,12 +832,42 @@ img {
         background-color: var(--clr-text-main);
     }
 
+    .menu-toggle.active .bar {
+        background-color: var(--clr-text-main);
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .hero h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .story, .menu, .review-section {
+        padding: 60px 20px;
+    }
+
+    .btn-google-review {
+        width: auto !important;
+        padding: 12px 24px;
+        font-size: 0.95rem;
     }
 
     .footer-links {

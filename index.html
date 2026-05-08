@@ -96,7 +96,7 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <h3 data-i18n="item1Title">Strong Macchiato</h3>
-                            <span class="price">$5.00</span>
+                            <span class="price">€5.00</span>
                         </div>
                         <p data-i18n="item1Desc">A bold double shot of espresso with a stain of velvety microfoam.</p>
                     </div>
@@ -104,7 +104,7 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <h3 data-i18n="item2Title">Artisan Flatbread</h3>
-                            <span class="price">$7.50</span>
+                            <span class="price">€7.50</span>
                         </div>
                         <p data-i18n="item2Desc">Freshly baked traditional bread served warm with whipped herb butter.
                         </p>
@@ -113,7 +113,7 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <h3 data-i18n="item3Title">Morning Grill Plate</h3>
-                            <span class="price">$18.00</span>
+                            <span class="price">€18.00</span>
                         </div>
                         <p data-i18n="item3Desc">Savory grilled artisan meats paired with a vibrant side salad and light
                             vinaigrette.</p>
@@ -122,7 +122,7 @@
                     <div class="menu-item">
                         <div class="menu-item-header">
                             <h3 data-i18n="item4Title">Classic Latte</h3>
-                            <span class="price">$6.00</span>
+                            <span class="price">€6.00</span>
                         </div>
                         <p data-i18n="item4Desc">Smooth espresso combined with steamed milk and intricate latte art.</p>
                     </div>
@@ -176,10 +176,9 @@
                 <p class="form-desc" data-i18n="shareDesc">We value your feedback. Leave us a review on Google Maps to
                     help others find us and improve our service.</p>
 
-                <div style="margin-top: 20px;">
+                <div class="google-review-action">
                     <a href="https://maps.app.goo.gl/4ko4mEtGDt5DUoK56" target="_blank" rel="noopener noreferrer"
-                        class="btn-primary"
-                        style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%;">
+                        class="btn-primary btn-google-review">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -344,6 +343,22 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a, .lang-option').forEach(element => {
+            element.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
         });
 
         // Intersection Observer for scroll animations
