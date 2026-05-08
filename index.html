@@ -25,10 +25,17 @@
         <div class="nav-container">
             <a href="#" class="logo">S<span class="logo-accent">E</span>LITT</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact" class="btn-outline">Visit Us</a></li>
+                <li><a href="#home" data-i18n="navHome">Home</a></li>
+                <li><a href="#story" data-i18n="navStory">Our Story</a></li>
+                <li><a href="#menu" data-i18n="navMenu">Menu</a></li>
+                <li><a href="#contact" class="btn-outline" data-i18n="navVisit">Visit Us</a></li>
+                <li>
+                    <div class="lang-toggle">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-option" data-lang="sq">AL</span>
+                    </div>
+                </li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -43,9 +50,10 @@
         <div class="hero-image" style="background-image: url('assets/hero.png');"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-in-up">The Art of <br>Modern Coffee</h1>
-            <p class="fade-in-up delay-1">Minimalist design, historic views, and a perfectly poured experience.</p>
-            <a href="#menu" class="btn-primary fade-in-up delay-2">Explore the Menu</a>
+            <h1 class="fade-in-up" data-i18n-html="heroTitle">The Art of <br>Modern Coffee</h1>
+            <p class="fade-in-up delay-1" data-i18n="heroDesc">Minimalist design, historic views, and a perfectly poured
+                experience.</p>
+            <a href="#menu" class="btn-primary fade-in-up delay-2" data-i18n="heroBtn">Explore the Menu</a>
         </div>
     </section>
 
@@ -53,14 +61,15 @@
     <section id="story" class="story">
         <div class="container split-layout">
             <div class="story-text">
-                <span class="section-subtitle">Atmosphere & Craft</span>
-                <h2 class="section-title">Passion in Every Pour</h2>
-                <p>At Selitt, we believe that coffee is more than just a drink—it's an experience. Our professional
-                    baristas meticulously craft each cup, pulling rich, bold flavors from the finest espresso grounds.
-                </p>
-                <p>Set against a backdrop of warm amber lighting and dark matte finishes, our cafe offers a sanctuary
-                    where modern elegance meets artisanal dedication.</p>
-                <a href="#contact" class="link-arrow">Discover our space <span class="arrow">→</span></a>
+                <span class="section-subtitle" data-i18n="storySubtitle">Atmosphere & Craft</span>
+                <h2 class="section-title" data-i18n="storyTitle">Passion in Every Pour</h2>
+                <p data-i18n="storyP1">At Selitt, we believe that coffee is more than just a drink - it is an
+                    experience. Our professional baristas meticulously craft each cup, pulling rich, bold flavors from
+                    the finest espresso grounds.</p>
+                <p data-i18n="storyP2">Set against a backdrop of warm amber lighting and dark matte finishes, our cafe
+                    offers a sanctuary where modern elegance meets artisanal dedication.</p>
+                <a href="#contact" class="link-arrow"><span data-i18n="storyLink">Discover our space</span> <span
+                        class="arrow">→</span></a>
             </div>
             <div class="story-image-wrapper">
                 <img src="assets/story.png" alt="Barista tamping fresh espresso grounds" class="story-image">
@@ -73,10 +82,10 @@
     <section id="menu" class="menu">
         <div class="container">
             <div class="menu-header text-center">
-                <span class="section-subtitle">Food & Drink</span>
-                <h2 class="section-title">A Taste of Perfection</h2>
-                <p class="menu-desc">Indulge in our carefully curated selection of strong macchiatos, fresh traditional
-                    bread, and artisan grilled meats.</p>
+                <span class="section-subtitle" data-i18n="menuSubtitle">Food & Drink</span>
+                <h2 class="section-title" data-i18n="menuTitle">A Taste of Perfection</h2>
+                <p class="menu-desc" data-i18n="menuDesc">Indulge in our carefully curated selection of strong
+                    macchiatos, fresh traditional bread, and artisan grilled meats.</p>
             </div>
 
             <div class="menu-showcase">
@@ -86,34 +95,36 @@
                 <div class="menu-list">
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Strong Macchiato</h3>
+                            <h3 data-i18n="item1Title">Strong Macchiato</h3>
                             <span class="price">$5.00</span>
                         </div>
-                        <p>A bold double shot of espresso with a stain of velvety microfoam.</p>
+                        <p data-i18n="item1Desc">A bold double shot of espresso with a stain of velvety microfoam.</p>
                     </div>
 
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Artisan Flatbread</h3>
+                            <h3 data-i18n="item2Title">Artisan Flatbread</h3>
                             <span class="price">$7.50</span>
                         </div>
-                        <p>Freshly baked traditional bread served warm with whipped herb butter.</p>
+                        <p data-i18n="item2Desc">Freshly baked traditional bread served warm with whipped herb butter.
+                        </p>
                     </div>
 
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Morning Grill Plate</h3>
+                            <h3 data-i18n="item3Title">Morning Grill Plate</h3>
                             <span class="price">$18.00</span>
                         </div>
-                        <p>Savory grilled artisan meats paired with a vibrant side salad and light vinaigrette.</p>
+                        <p data-i18n="item3Desc">Savory grilled artisan meats paired with a vibrant side salad and light
+                            vinaigrette.</p>
                     </div>
 
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Classic Latte</h3>
+                            <h3 data-i18n="item4Title">Classic Latte</h3>
                             <span class="price">$6.00</span>
                         </div>
-                        <p>Smooth espresso combined with steamed milk and intricate latte art.</p>
+                        <p data-i18n="item4Desc">Smooth espresso combined with steamed milk and intricate latte art.</p>
                     </div>
                 </div>
             </div>
@@ -125,57 +136,58 @@
         <div class="container review-layout">
             <!-- Left: Testimonials -->
             <div class="review-testimonials fade-up-element">
-                <span class="section-subtitle">Testimonials</span>
-                <h2 class="section-title">Guest Experiences</h2>
-                
+                <span class="section-subtitle" data-i18n="reviewSubtitle">Testimonials</span>
+                <h2 class="section-title" data-i18n="reviewTitle">Guest Experiences</h2>
+
                 <div class="rating-summary">
                     <div class="rating-number">4.9</div>
                     <div class="rating-stars">★★★★★</div>
-                    <p>Based on <span id="review-count">128</span> reviews</p>
+                    <p><span data-i18n="reviewBasedOn">Based on</span> <span id="review-count">128</span> <span
+                            data-i18n="reviewReviews">reviews</span></p>
                 </div>
 
                 <div class="testimonials-scroll-container">
                     <div class="testimonial-card">
                         <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Nice place, more like a home :D"</p>
-                        <p class="testimonial-author">— Laçin Bey</p>
+                        <p class="testimonial-text" data-i18n="rev1Text">"Great spot. Good coffee, nice people."</p>
+                        <p class="testimonial-author">Arben K.</p>
                     </div>
 
                     <div class="testimonial-card">
                         <div class="testimonial-stars">★★★★★</div>
-                        <p class="testimonial-text">"Selitt Coffee & Foods is simply amazing! The coffee is some of the best I've ever had. The food is always fresh and full of flavor. The atmosphere is very warm, and the staff is super friendly and polite. A place I always return to with pleasure!"</p>
-                        <p class="testimonial-author">— Google Reviewer</p>
+                        <p class="testimonial-text" data-i18n="rev2Text">"Love the vibe here. Always my go-to for a
+                            morning latte."</p>
+                        <p class="testimonial-author">Sarah M.</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text" data-i18n="rev3Text">"The flatbread is actually crazy good. Will be
+                            back."</p>
+                        <p class="testimonial-author">Dardan M.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right: Form -->
-            <div class="review-form-container fade-up-element">
-                <h3>Share Your Experience</h3>
-                <p class="form-desc">We value your feedback. Let us know how we did.</p>
-                
-                <div class="form-group">
-                    <input type="text" id="name" class="modern-input" placeholder=" " required>
-                    <label for="name" class="floating-label">Your Name</label>
-                </div>
+            <!-- Right: Call to Action -->
+            <div class="review-form-container fade-up-element"
+                style="display: flex; flex-direction: column; justify-content: center; text-align: center; height: 100%;">
+                <h3 data-i18n="shareTitle">Share Your Experience</h3>
+                <p class="form-desc" data-i18n="shareDesc">We value your feedback. Leave us a review on Google Maps to
+                    help others find us and improve our service.</p>
 
-                <div class="form-group">
-                    <label class="static-label">Your Rating</label>
-                    <div class="stars">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://maps.app.goo.gl/4ko4mEtGDt5DUoK56" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary"
+                        style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span data-i18n="shareBtn">Review on Google Maps</span>
+                    </a>
                 </div>
-
-                <div class="form-group">
-                    <textarea id="review-text" class="modern-input textarea-input" placeholder=" " rows="3" required></textarea>
-                    <label for="review-text" class="floating-label">Tell us about your visit...</label>
-                </div>
-                
-                <button class="btn-primary submit-review">Post Review</button>
             </div>
         </div>
     </section>
@@ -185,19 +197,20 @@
         <div class="container footer-content">
             <div class="footer-brand">
                 <h2 class="logo">S<span class="logo-accent">E</span>LITT</h2>
-                <p>A modern minimalist cafe with industrial accents.</p>
+                <p data-i18n="footerDesc">A modern minimalist cafe with industrial accents.</p>
             </div>
             <div class="footer-links">
                 <div class="link-group">
-                    <h4>Visit Us</h4>
-                    <p>Rr. Lekë Matrënga - Prizren<br>(Përballë Gjimnazit "Gjon Buzuku")</p>
+                    <h4 data-i18n="footerVisit">Visit Us</h4>
+                    <p data-i18n-html="footerAddress">Rr. Lekë Matrënga - Prizren<br>(Përballë Gjimnazit "Gjon Buzuku")
+                    </p>
                 </div>
                 <div class="link-group">
-                    <h4>Hours</h4>
-                    <p>Mon-Fri: 7am - 8pm<br>Sat-Sun: 8am - 9pm</p>
+                    <h4 data-i18n="footerHours">Hours</h4>
+                    <p data-i18n-html="footerTime">Mon-Fri: 7am - 8pm<br>Sat-Sun: 8am - 9pm</p>
                 </div>
                 <div class="link-group">
-                    <h4>Connect</h4>
+                    <h4 data-i18n="footerConnect">Connect</h4>
                     <div class="social-links">
                         <a href="https://www.instagram.com/selittcoffee" target="_blank"
                             rel="noopener noreferrer">Instagram</a>
@@ -211,6 +224,118 @@
     </footer>
 
     <script>
+        const i18n = {
+            en: {
+                navHome: "Home",
+                navStory: "Our Story",
+                navMenu: "Menu",
+                navVisit: "Visit Us",
+                heroTitle: "The Art of <br>Modern Coffee",
+                heroDesc: "Minimalist design, historic views, and a perfectly poured experience.",
+                heroBtn: "Explore the Menu",
+                storySubtitle: "Atmosphere & Craft",
+                storyTitle: "Passion in Every Pour",
+                storyP1: "At Selitt, we believe that coffee is more than just a drink - it is an experience. Our professional baristas meticulously craft each cup, pulling rich, bold flavors from the finest espresso grounds.",
+                storyP2: "Set against a backdrop of warm amber lighting and dark matte finishes, our cafe offers a sanctuary where modern elegance meets artisanal dedication.",
+                storyLink: "Discover our space",
+                menuSubtitle: "Food & Drink",
+                menuTitle: "A Taste of Perfection",
+                menuDesc: "Indulge in our carefully curated selection of strong macchiatos, fresh traditional bread, and artisan grilled meats.",
+                item1Title: "Strong Macchiato",
+                item1Desc: "A bold double shot of espresso with a stain of velvety microfoam.",
+                item2Title: "Artisan Flatbread",
+                item2Desc: "Freshly baked traditional bread served warm with whipped herb butter.",
+                item3Title: "Morning Grill Plate",
+                item3Desc: "Savory grilled artisan meats paired with a vibrant side salad and light vinaigrette.",
+                item4Title: "Classic Latte",
+                item4Desc: "Smooth espresso combined with steamed milk and intricate latte art.",
+                reviewSubtitle: "Testimonials",
+                reviewTitle: "Guest Experiences",
+                reviewBasedOn: "Based on",
+                reviewReviews: "reviews",
+                rev1Text: "\"Great spot. Good coffee, nice people.\"",
+                rev2Text: "\"Love the vibe here. Always my go-to for a morning latte.\"",
+                rev3Text: "\"The flatbread is actually crazy good. Will be back.\"",
+                shareTitle: "Share Your Experience",
+                shareDesc: "We value your feedback. Leave us a review on Google Maps to help others find us and improve our service.",
+                shareBtn: "Review on Google Maps",
+                footerDesc: "A modern minimalist cafe with industrial accents.",
+                footerVisit: "Visit Us",
+                footerHours: "Hours",
+                footerConnect: "Connect",
+                footerAddress: "Rr. Lekë Matrënga - Prizren<br>(Përballë Gjimnazit \"Gjon Buzuku\")",
+                footerTime: "Mon-Fri: 7am - 8pm<br>Sat-Sun: 8am - 9pm"
+            },
+            sq: {
+                navHome: "Kreu",
+                navStory: "Historia Jonë",
+                navMenu: "Menuja",
+                navVisit: "Na Vizitoni",
+                heroTitle: "Arti i <br>Kafesë Moderne",
+                heroDesc: "Dizajn minimalist, pamje historike dhe një përvojë e përsosur kafeje.",
+                heroBtn: "Eksploroni Menunë",
+                storySubtitle: "Atmosfera & Mjeshtëria",
+                storyTitle: "Pasion në Çdo Filxhan",
+                storyP1: "Në Selitt, ne besojmë se kafeja është më shumë se thjesht një pije - ajo është një përvojë. Baristët tanë profesionistë përgatisin me kujdes secilin filxhan, duke nxjerrë shije të pasura dhe të forta nga kokrrat më të mira të ekspresos.",
+                storyP2: "Me një sfond ndriçimi të ngrohtë dhe detaje të errëta mat, kafeneja jonë ofron një vend ku eleganca moderne takohet me përkushtimin artizanal.",
+                storyLink: "Zbuloni hapësirën tonë",
+                menuSubtitle: "Ushqim & Pije",
+                menuTitle: "Një Shije Perfekte",
+                menuDesc: "Shijoni përzgjedhjen tonë të kuruar me kujdes me makiato të forta, bukë të freskët tradicionale dhe mish të pjekur në skarë.",
+                item1Title: "Makiato e Fortë",
+                item1Desc: "Një dozë e dyfishtë e fortë ekspresi me pak shkumë të butë qumështi.",
+                item2Title: "Bukë Artizanale",
+                item2Desc: "Bukë tradicionale e sapopjekur, shërbyer e ngrohtë me gjalpë me erëza.",
+                item3Title: "Pjatë Mëngjesi në Skarë",
+                item3Desc: "Mish i shijshëm i pjekur në skarë shoqëruar me një sallatë të freskët dhe salcë të lehtë.",
+                item4Title: "Late Klasike",
+                item4Desc: "Ekspres i butë i kombinuar me qumësht të ngrohtë dhe art të detajuar në shkumë.",
+                reviewSubtitle: "Përshtypjet",
+                reviewTitle: "Përvojat e Vizitorëve",
+                reviewBasedOn: "Bazuar në",
+                reviewReviews: "vlerësime",
+                rev1Text: "\"Super vend. Kafe e mirë, staf i sjellshëm.\"",
+                rev2Text: "\"Më pëlqen shumë ambienti. Gjithmonë vij këtu për kafen e mëngjesit.\"",
+                rev3Text: "\"Buka ishte tepër e shijshme. Do vij prapë.\"",
+                shareTitle: "Ndani Përvojën Tuaj",
+                shareDesc: "Ne e vlerësojmë mendimin tuaj. Na lini një vlerësim në Google Maps për të ndihmuar të tjerët të na gjejnë dhe për të përmirësuar shërbimin tonë.",
+                shareBtn: "Vlerësoni në Google Maps",
+                footerDesc: "Një kafene moderne minimaliste me detaje industriale.",
+                footerVisit: "Na Vizitoni",
+                footerHours: "Orari",
+                footerConnect: "Lidhuni me ne",
+                footerAddress: "Rr. Lekë Matrënga - Prizren<br>(Përballë Gjimnazit \"Gjon Buzuku\")",
+                footerTime: "Hën-Pre: 7am - 8pm<br>Sht-Die: 8am - 9pm"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.textContent = i18n[lang][key];
+                }
+            });
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerHTML = i18n[lang][key];
+                }
+            });
+
+            document.querySelectorAll('.lang-option').forEach(el => {
+                el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+            });
+
+            document.documentElement.lang = lang;
+        }
+
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                setLanguage(btn.getAttribute('data-lang'));
+            });
+        });
+
         // Simple script for navbar scroll effect and mobile menu
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
@@ -273,94 +398,6 @@
                 this.appendChild(ripple);
                 setTimeout(() => ripple.remove(), 600);
             });
-        });
-
-        // Review Stars Logic
-        const stars = document.querySelectorAll('.star');
-        let selectedRating = 5;
-        
-        stars.forEach(s => s.style.color = 'var(--clr-accent)');
-
-        stars.forEach(star => {
-            star.addEventListener('mouseover', function() {
-                const val = this.getAttribute('data-value');
-                stars.forEach(s => {
-                    s.style.color = s.getAttribute('data-value') <= val ? 'var(--clr-accent)' : '#ddd';
-                });
-            });
-            star.addEventListener('mouseout', function() {
-                stars.forEach(s => {
-                    s.style.color = s.getAttribute('data-value') <= selectedRating ? 'var(--clr-accent)' : '#ddd';
-                });
-            });
-            star.addEventListener('click', function() {
-                selectedRating = this.getAttribute('data-value');
-                
-                // Add a little pop animation on click
-                this.style.transform = 'scale(1.2)';
-                setTimeout(() => this.style.transform = 'scale(1)', 150);
-            });
-        });
-
-        // Review Submit Logic
-        document.querySelector('.submit-review').addEventListener('click', function(e) {
-            e.preventDefault();
-            const btn = this;
-            const nameInput = document.getElementById('name');
-            const reviewInput = document.getElementById('review-text');
-            
-            if(!nameInput.value || !reviewInput.value) {
-                alert("Please fill in your name and review.");
-                return;
-            }
-
-            const originalText = btn.innerText;
-            btn.innerText = 'Sending...';
-            btn.style.opacity = '0.8';
-            
-            // Simulate sending
-            setTimeout(() => {
-                // Create new review element
-                const newCard = document.createElement('div');
-                newCard.className = 'testimonial-card fade-in-up';
-                
-                let starsHTML = '';
-                for(let i=0; i<5; i++) {
-                    starsHTML += i < selectedRating ? '★' : '☆';
-                }
-
-                newCard.innerHTML = `
-                    <div class="testimonial-stars">${starsHTML}</div>
-                    <p class="testimonial-text">"${reviewInput.value}"</p>
-                    <p class="testimonial-author">— ${nameInput.value}</p>
-                `;
-                
-                // Add to scroll container
-                const container = document.querySelector('.testimonials-scroll-container');
-                container.insertBefore(newCard, container.firstChild);
-                
-                // Smooth scroll to see the new review
-                container.scrollTo({ top: 0, behavior: 'smooth' });
-
-                // Update count
-                const countEl = document.getElementById('review-count');
-                if(countEl) countEl.innerText = parseInt(countEl.innerText) + 1;
-
-                // Button success state
-                btn.innerText = 'Review Sent! Thank You!';
-                btn.style.backgroundColor = '#4CAF50';
-                btn.style.opacity = '1';
-                
-                // Reset form
-                nameInput.value = '';
-                reviewInput.value = '';
-                
-                // Reset after 3 seconds
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.style.backgroundColor = '';
-                }, 3000);
-            }, 800);
         });
     </script>
 </body>
